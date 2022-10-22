@@ -1,0 +1,135 @@
+:root{
+  --branco_princ:#FFFFFF;
+  --cinza_secund:#C0C0C0;
+  --botao_azul:#167BF7;
+  --cor_fundo:#00030C;
+  --botao-azul_efeito:#4888d5;
+  --botao_sec: #838181;
+  --font_princ:"Inter";
+}
+body{
+  background-color: var(--cor_fundo);
+  color: var(--branco_princ);
+  font-family: var(--font_princ);
+  font-size: 16px;
+  font-weight: 400;
+}
+*{
+  margin:0;
+  padding: 0;
+}
+.principal{
+  background-image: url("Imgs/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+.container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.cont_caixa{
+  margin:0 6em;
+}
+.cont_tittle{
+  font-size: 28px;
+  font-weight: 700;
+}
+.cont_bot{
+  background-color: var(--botao_azul);
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--branco_princ);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+.cont_bot:hover{
+  background-color: var(--botao-azul_efeito);
+  transition: 0.5s;
+}
+.cont_bot_sec{
+  background-color: transparent;
+  border: 2px solid var(--branco_princ);
+}
+.cont_bot_sec:hover{
+  background-color: var(--botao_sec);
+  transition: 0.5s;
+}
+.cont_aviso{
+  font-size: 12px;
+  color: var(--cinza_secund);
+}
+.cont_img{
+  margin: 1em 0 2em 0;
+}
+.secund_img{
+  width: 80%;
+}
+.secundario{
+  align-items: center;
+  margin: 0 10em;
+}
+.desc_tittle{
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--branco_princ);
+  margin-bottom: 0.1em;
+}
+.desc_texto{
+  color: var(--cinza_secund);
+}
+.cont_bot_terc{
+  display: inline-block;
+  margin-top: 1em;
+}
+.cont_desc{
+  padding: 2em;
+}
+.disp_lista{
+  display:flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 5em 0;
+}
+.dispositivos{
+  text-align: center;
+}
+.disp_tittle{
+  font-size: 48px;
+  color: var(--branco_princ);
+}
+.lista_itens{
+  font-size: 32px;
+  color: var(--branco_princ);
+}
+.rodape{
+  text-align: center;
+  margin: 5em 3em;
+}
+.rodape_logo{
+  margin: 1.3em;
+}
+.lista_link{
+  display:inline;
+  margin: 0.3em;
+}
+li a{
+ text-decoration: none;
+  color: var(--branco_princ); 
+  margin-left: 1em;
+}
+.rodape_texto{
+  text-align: center;
+  margin: 1em;
+  color: var(--cinza_secund);
+}
+.lista_link a:hover{
+  color: var(--botao_azul);
+  transition: 0.5s;
+}
+.lista_link a:active{
+  color: purple;
+}
